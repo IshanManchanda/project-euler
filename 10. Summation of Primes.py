@@ -9,8 +9,6 @@ def main():
 			if p * p > x:
 				primes.append(x)
 				break
-		# else:
-		# 	primes.append(x)
 
 		x += 1
 	print(sum(primes[:-1]))
