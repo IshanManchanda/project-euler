@@ -6,12 +6,14 @@ def main():
 		for p in primes:
 			if x % p == 0:
 				break
-		else:
-			primes.append(x)
+			if p * p > x:
+				primes.append(x)
+				break
+		# else:
+		# 	primes.append(x)
 
 		x += 1
-
-	print(sum(primes))
+	print(sum(primes[:-1]))
 
 
 main()
